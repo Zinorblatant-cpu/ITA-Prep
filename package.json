@@ -1,0 +1,25 @@
+{
+  "name": "ita-2028-study-platform",
+  "private": true,
+  "version": "0.1.0",
+  "workspaces": [
+    "packages/*",
+    "backend",
+    "frontend"
+  ],
+  "scripts": {
+    "dev": "concurrently -k -n backend,frontend -c blue,green \"npm run dev -w backend\" \"npm run dev -w frontend\"",
+    "dev:backend": "npm run dev -w backend",
+    "dev:frontend": "npm run dev -w frontend",
+    "db:generate": "npm run db:generate -w backend",
+    "db:migrate": "npm run db:migrate -w backend",
+    "db:seed": "npm run db:seed -w backend",
+    "db:studio": "npm run db:studio -w backend",
+    "build": "npm run build -w packages/shared-types && npm run build -w backend && npm run build -w frontend",
+    "lint": "npm run lint -w backend && npm run lint -w frontend",
+    "typecheck": "npm run typecheck -w packages/shared-types && npm run typecheck -w backend && npm run typecheck -w frontend"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0"
+  }
+}

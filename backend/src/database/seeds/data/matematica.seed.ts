@@ -1,0 +1,31 @@
+import type { SubjectSeed } from "./types";
+
+export const matematicaSeed: SubjectSeed = {
+  slug: "matematica",
+  name: "Matemática",
+  color: "#3B82F6",
+  icon: "sigma",
+  topics: [
+    { name: "Conjuntos e Conjuntos Numéricos", order: 1, difficulty: "facil", priority: "media" },
+    { name: "Funções", order: 2, difficulty: "medio", priority: "alta" },
+    { name: "Equações e Inequações", order: 3, difficulty: "medio", priority: "alta" },
+    { name: "Matrizes", order: 4, difficulty: "medio", priority: "media" },
+    { name: "Determinantes", order: 5, difficulty: "medio", priority: "media" },
+    { name: "Sistemas Lineares", order: 6, difficulty: "medio", priority: "media" },
+    { name: "Números Complexos", order: 7, difficulty: "dificil", priority: "alta" },
+    { name: "Polinômios", order: 8, difficulty: "dificil", priority: "alta" },
+    { name: "Trigonometria", order: 9, difficulty: "dificil", priority: "alta" },
+    { name: "Progressões (PA e PG)", order: 10, difficulty: "medio", priority: "media" },
+    { name: "Análise Combinatória", order: 11, difficulty: "dificil", priority: "alta" },
+    { name: "Binômio de Newton", order: 12, difficulty: "medio", priority: "media" },
+    { name: "Probabilidade", order: 13, difficulty: "dificil", priority: "alta" },
+    { name: "Estatística", order: 14, difficulty: "facil", priority: "baixa" },
+    { name: "Geometria Plana", order: 15, difficulty: "dificil", priority: "alta" },
+    { name: "Geometria Espacial", order: 16, difficulty: "dificil", priority: "alta" },
+    { name: "Geometria Analítica", order: 17, difficulty: "dificil", priority: "alta" },
+    { name: "Limites", order: 18, difficulty: "dificil", priority: "media" },
+    { name: "Derivadas", order: 19, difficulty: "dificil", priority: "media" },
+    { name: "Introdução a Integrais", order: 20, difficulty: "dificil", priority: "media" },
+    { name: "Bases Numéricas e Números Binários", order: 21, difficulty: "medio", priority: "baixa" },
+  ],
+};

@@ -1,0 +1,30 @@
+import { Router } from "express";
+import { subjectsRouter } from "./subjects.routes";
+import { topicsRouter } from "./topics.routes";
+import { studySessionsRouter } from "./study-sessions.routes";
+import { reviewsRouter } from "./reviews.routes";
+import { errorNotebookRouter } from "./error-notebook.routes";
+import { dashboardRouter } from "./dashboard.routes";
+import { questionsRouter } from "./questions.routes";
+import { goalsRouter } from "./goals.routes";
+import { mockExamsRouter } from "./mock-exams.routes";
+import { gamificationRouter } from "./gamification.routes";
+import { calendarRouter } from "./calendar.routes";
+import { settingsRouter } from "./settings.routes";
+import { statisticsRouter } from "./statistics.routes";
+
+export const apiRouter = Router();
+
+apiRouter.use("/subjects", subjectsRouter);
+apiRouter.use("/topics", topicsRouter);
+apiRouter.use("/study-sessions", studySessionsRouter);
+apiRouter.use("/reviews", reviewsRouter);
+apiRouter.use("/error-notebook", errorNotebookRouter);
+apiRouter.use("/dashboard", dashboardRouter);
+apiRouter.use("/questions", questionsRouter);
+apiRouter.use("/goals", goalsRouter);
+apiRouter.use("/mock-exams", mockExamsRouter);
+apiRouter.use("/gamification", gamificationRouter);
+apiRouter.use("/calendar", calendarRouter);
+apiRouter.use("/settings", settingsRouter);
+apiRouter.use("/statistics", statisticsRouter);
